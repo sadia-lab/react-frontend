@@ -26,9 +26,7 @@ npm start
 http://localhost:3000
 
 📁 Project Structure
-csharp
-Copy
-Edit
+
 entity-review1/
 │── src/                # Source code
 │   ├── components/     # UI components
