@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -15,3 +16,8 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+// ✅ Allow API connections from localhost:9090
+const cspMeta = document.createElement("meta");
+cspMeta.httpEquiv = "Content-Security-Policy";
+cspMeta.content = "default-src 'self' http://localhost:3000; connect-src 'self' http://localhost:9090; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';";
+document.head.appendChild(cspMeta);
