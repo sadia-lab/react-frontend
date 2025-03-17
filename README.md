@@ -1,51 +1,42 @@
-# React Frontend for POI Entity Review
+**React Frontend**
 
-This is the frontend application for the POI Entity Review system, built using **React.js**.
+This is the frontend for the React-based application. It is built using Create React App and requires Node.js to run.
 
-## 🚀 Getting Started
+**Installation Guide**
 
-### Prerequisites
-Ensure you have the following installed:
-- **Node.js** (LTS version recommended)
-- **npm** (or `yarn` as an alternative)
+**Prerequisites**
 
-### Installation
+Install Node.js (Recommended version: LTS)
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/sadia-lab/react-frontend.git
-   cd entity-review1
-   
-2. Install dependencies:
+Install Git (for cloning the repository)
+
+**Clone the Repository**
+
+git clone https://github.com/YOUR_USERNAME/react-frontend.git
+cd react-frontend
+
+**Install Dependencies**
+
 npm install
 
-3: Start the development server:
+This will install all the required dependencies listed in package.json.
+
+**Start the Development Server**
+
 npm start
 
-4: Open the app in your browser:
-http://localhost:3000
+This command runs the app in development mode. Open http://localhost:3000 to view it in your browser.
 
-📁 Project Structure
+The page will automatically reload when you make changes to the code.
 
-entity-review1/
-│── src/                # Source code
-│   ├── components/     # UI components
-│   ├── pages/          # Page-level components
-│   ├── services/       # API service calls
-│   ├── assets/         # Static assets (images, icons)
-│   ├── App.js          # Main application component
-│   ├── index.js        # Entry point
-│── public/             # Static public files
-│── package.json        # Project dependencies & scripts
-│── README.md           # Documentation
+**Build for Production**
 
-🛠 Available Scripts
-npm start – Runs the app in development mode
-npm test – Launches the test runner
-npm run build – Builds the app for production
-npm run eject – Removes React configuration (irreversible)
-🌍 API Integration
+npm run build
 
-This React app interacts with the Spring AI Backend running at:
-http://localhost:9090/api/metadataenricher
-Ensure the backend is running before testing API calls.
+This command creates a production-ready build in the build/ folder.
+
+**Running Tests**
+
+npm test
+
+Runs the test suite in interactive watch mode.
