@@ -15,12 +15,16 @@ Ensure you have the following installed:
    ```sh
    git clone https://github.com/sadia-lab/react-frontend.git
    cd entity-review1
+   
 2. Install dependencies:
 npm install
+
 3: Start the development server:
 npm start
+
 4: Open the app in your browser:
 http://localhost:3000
+
 📁 Project Structure
 csharp
 Copy
@@ -36,12 +40,14 @@ entity-review1/
 │── public/             # Static public files
 │── package.json        # Project dependencies & scripts
 │── README.md           # Documentation
+
 🛠 Available Scripts
 npm start – Runs the app in development mode
 npm test – Launches the test runner
 npm run build – Builds the app for production
 npm run eject – Removes React configuration (irreversible)
 🌍 API Integration
+
 This React app interacts with the Spring AI Backend running at:
 http://localhost:9090/api/metadataenricher
 Ensure the backend is running before testing API calls.
